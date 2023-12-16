@@ -1,0 +1,218 @@
+import { StyleSheet } from "react-native";
+import { Colors, Sizes } from "./Themes";
+const Styles = StyleSheet.create({
+  container: {
+    width: "100%",
+    padding: 10,
+    margin: 0,
+  },
+  SafeAreaLoginPage: {
+    backgroundColor: Colors.secondBackgroundColor,
+    height: "100%",
+  },
+  LoginPage: {
+    backgroundColor: Colors.secondBackgroundColor,
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: 100,
+    padding: 50,
+    flex: 1,
+    height: "100%",
+  },
+  LoginLogo: {
+    height: 150,
+    width: 150,
+    borderRadius: 20,
+  },
+  LoginText: {
+    fontSize: 24,
+    padding: 10,
+    marginBottom: 20,
+    fontWeight: "bold",
+  },
+  InputText: {
+    width: "100%",
+    textAlign: "left",
+    fontSize: 18,
+    fontWeight: "bold",
+    color: Colors.darkGray,
+  },
+  Input: {
+    backgroundColor: Colors.backgroundColor,
+    color: Colors.darkGray,
+    width: "100%",
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    fontSize: 18,
+    borderRadius: 10,
+    marginTop: 15,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: Colors.lightGray,
+  },
+  LoginButton: {
+    backgroundColor: Colors.main,
+    color: "#fff",
+    borderRadius: 10,
+    paddingHorizontal: 40,
+    paddingVertical: 20,
+    width: "100%",
+    textAlign: "center",
+    marginTop: 20,
+  },
+  LoginButtonText: {
+    color: "#fff",
+    fontSize: 20,
+    textAlign: "center",
+  },
+  accountQuestion: {
+    marginTop: 10,
+    color: Colors.darkGray,
+  },
+  accountqubutton: {
+    color: Colors.main,
+    paddingTop: 30,
+  },
+  errorMessage: {
+    backgroundColor: Colors.red,
+    marginHorizontal: 20,
+    padding: 5,
+    borderRadius: 10,
+    gap: 10,
+    marginTop: 20,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+  },
+  errorText: {
+    color: "#fff",
+    fontSize: 18,
+  },
+});
+const HeaderStyle = StyleSheet.create({
+  mainStyle: {
+    backgroundColor: Colors.second,
+    height: 20,
+  },
+  logo: {
+    height: 40,
+    width: 40,
+    paddingRight: 10,
+    marginRight: 20,
+    borderRadius: 10,
+    tintColor: Colors.main,
+  },
+  sidePanelLogo: (sidePanel) => ({
+    height: 30,
+    width: 30,
+    tintColor: sidePanel === true ? Colors.main : Colors.white,
+  }),
+  sidePanel: {
+    backgroundColor: Colors.second,
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flexStart",
+    flexDirection: "column",
+  },
+  currentUserCon: {
+    padding: 20,
+    display: "flex",
+    flexDirection: "row",
+    gap: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.darkGray,
+  },
+  currentUserImageCon: {
+    padding: 5,
+    backgroundColor: Colors.darkSecondColor,
+    borderRadius: 50,
+  },
+  currentUserLogo: {
+    backgroundColor: Colors.darkSecondColor,
+    borderRadius: 50,
+    width: 40,
+    height: 40,
+    tintColor: Colors.lightGray,
+  },
+  currentUserName: {
+    fontWeight: "bold",
+    fontSize: 20,
+    color: "white",
+  },
+  currentUserEmail: {
+    fontWeight: "normal",
+    fontSize: 16,
+    color: Colors.lightGray,
+  },
+  sidePanelActionsCon: {
+    padding: 20,
+  },
+  linkDivider: {
+    height: 1,
+    backgroundColor: Colors.darkGray,
+    width: "80%",
+    marginHorizontal: "10%",
+  },
+  sectionDivider: {
+    height: 1,
+    backgroundColor: Colors.lightGray,
+    width: "80%",
+    marginHorizontal: "10%",
+  },
+  linkBtn: {
+    padding: 10,
+    borderRadius: 10,
+  },
+  linkBtnSelected: {
+    backgroundColor: Colors.darkSecondColor,
+    padding: 10,
+    borderRadius: 10,
+  },
+  linkText: { color: Colors.lightGray },
+  logOutBtn: {
+    padding: 10,
+    borderRadius: 10,
+    borderBottomWidth: 0,
+  },
+});
+const MainPageStyle = StyleSheet.create({
+  mainViewCon: {
+    width: "100%",
+    backgroundColor: Colors.secondBackgroundColor,
+    padding: 20,
+    display: "flex",
+    gap: 20,
+  },
+  card: {
+    width: "100%",
+    backgroundColor: "white",
+    borderRadius: 10,
+    padding: 20,
+  },
+  cardImage: {
+    width: "100%",
+    height: 200,
+    marginBottom: 20,
+    borderRadius: 10,
+  },
+  cardName: { fontSize: 22, fontWeight: "bold", color: Colors.darkGray },
+  cardDesc: { fontSize: 16, color: Colors.darkGray, marginBottom: 20 },
+  buttonCon: {
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+    gap: 10,
+    flexDirection: "row",
+  },
+  bigCon: {
+    width: 150,
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+    gap: 10,
+  },
+});
+export { Styles, HeaderStyle, MainPageStyle };
